@@ -61,7 +61,7 @@ export default function Component() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('https://freelance-backend-c6kl.onrender.com', {
+      const response = await fetch('https://freelance-backend-c6kl.onrender.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
