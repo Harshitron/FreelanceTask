@@ -81,8 +81,10 @@ export default function Component() {
         })
       } else {
         toast.error(`Submission failed: ${result.error}`)
+        console.log(`${result.error}`)
       }
     } catch (error) {
+      console.error('Fetch error:', error); 
       toast.error('An error occurred. Please try again.')
     }
   }
