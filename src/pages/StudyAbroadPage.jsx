@@ -37,7 +37,7 @@ export default function StudyAbroadPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://freelance-backend-c6kl.onrender.com/submit', {
+      const response = await fetch('https://freelance-backend-c6kl.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
