@@ -25,16 +25,16 @@ export default function SuccessStoriesPage() {
     },
     {
       name: 'Uzhunnan Fawaz',
-      university: 'Peoples Friendship University (RUEN)',
+      university: 'Peoples Friendship University (RUDN)',
       testimonial:
-        '"My experience as a medical student at Peoples Friendship University (RUEN) of Russia named after Patrice Lumumba has been truly enriching! I want to extend my gratitude to GKSAS for making the admission process smooth and comfortable. The universitys diverse community, expert faculty, and hands-on training have made learning both enjoyable and practical. This journey has deepened my passion for medicine and equipped me with invaluable skills. Im grateful to be part of such a supportive and inspiring environment and highly recommend this university to future medical students!"',
+        '"My experience as a medical student at Peoples Friendship University (RUDN) of Russia named after Patrice Lumumba has been truly enriching! I want to extend my gratitude to GKSAS for making the admission process smooth and comfortable. The universitys diverse community, expert faculty, and hands-on training have made learning both enjoyable and practical. This journey has deepened my passion for medicine and equipped me with invaluable skills. Im grateful to be part of such a supportive and inspiring environment and highly recommend this university to future medical students!"',
       photo: kid3,
     },
     {
       name: 'Kavila Vallappil Hamjad Rahman',
-      university: 'Peoples Friendship University (RUEN)',
+      university: 'Peoples Friendship University (RUDN)',
       testimonial:
-      "My experience as a medical student at People's Friendship University (RUDEN) of Russia named after Patrice Lumumba has been incredibly rewarding! A huge thank you to GKSAS for ensuring a smooth and comfortable admission process. The diverse community, knowledgeable faculty, and hands-on training have transformed my learning experience into something truly special. This journey has ignited my passion for medicine and provided me with essential skills for my future career. I feel fortunate to be part of such an inspiring environment and highly recommend this university to aspiring medical professionals!",
+      "My experience as a medical student at People's Friendship University (RUDN) of Russia named after Patrice Lumumba has been incredibly rewarding! A huge thank you to GKSAS for ensuring a smooth and comfortable admission process. The diverse community, knowledgeable faculty, and hands-on training have transformed my learning experience into something truly special. This journey has ignited my passion for medicine and provided me with essential skills for my future career. I feel fortunate to be part of such an inspiring environment and highly recommend this university to aspiring medical professionals!",
       photo: kid4,
     },
     {
