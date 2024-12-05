@@ -126,53 +126,61 @@ export default function Layout({ children }) {
 
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">{children}</main>
 
-      <footer className="bg-gray-800 text-white mt-16">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">About Us</h3>
-              <p className="text-gray-400">
-                GKSAS International is a leading platform for international education, helping students achieve their
-                dreams of studying abroad.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="#" className="text-gray-400 hover:text-white">
-                    Programs
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-gray-400 hover:text-white">
-                    Destinations
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-gray-400 hover:text-white">
-                    Scholarships
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-gray-400 hover:text-white">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-              <p className="text-gray-400">E 94/4 Jai Vihar Najafgarh    Delhi-110043</p>
-              <p className="text-gray-400">Phone: +91-8929874322/+91-8851612078</p>
-              <p className="text-gray-400">Email: gksaspvt@gmail.com</p>
-            </div>
+      <footer className="bg-gray-900 text-gray-300">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">About Us</h3>
+            <p className="text-sm">
+              GKSAS International is a leading platform for international education, helping students achieve their
+              dreams of studying abroad.
+            </p>
           </div>
-          <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2024 GKSAS International. All rights reserved.</p>
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              {['Programs', 'Destinations', 'Scholarships', 'Blog'].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="text-sm hover:text-white transition-colors duration-200">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Contact Us</h3>
+            <address className="text-sm not-italic">
+              <p>3rd Floor, Plot No 5 Shubham Enclave,</p>
+              <p>Block A, Paschim Vihar, Delhi, 110063</p>
+              <p className="mt-2">Phone: +91-8929874322 / +91-8851612078</p>
+              <p>Email: gksaspvt@gmail.com</p>
+            </address>
+          </div>
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Other Branches</h3>
+            {[
+              { country: 'Russia', addresses: ['7th Parkovaya street 2k2, Moscow, Russia']},
+              { country: 'Turkey', addresses: ['Bahceköy Bülbül sokak bülbül apartmani no2, İstanbul']},
+              { country: 'Nepal', addresses: [
+                'Hadiyababa road Fultekra -6 Nepalgunj, banke, Nepal',
+                'Mahadev Isthan near high vision colony, Radha Kirshna Tole, Chandragiri Kathmandu, Nepal'
+              ]}
+            ].map((branch) => (
+              <div key={branch.country} className="mb-4">
+                <h4 className="text-white text-base font-medium mb-2">{branch.country}</h4>
+                {branch.addresses.map((address, index) => (
+                  <p key={index} className="text-sm mb-1">{address}</p>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
-      </footer>
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p className="text-sm">&copy; {new Date().getFullYear()} GKSAS International. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 }
