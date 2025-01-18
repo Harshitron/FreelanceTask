@@ -150,7 +150,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Kemerovo State Medical University",
+        name: "Sechenov University",
         image: ru2,
         description: "Comprehensive medical education in Siberia.",
         details: [
@@ -208,7 +208,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Kirov State Medical University",
+        name: "Kemerovo State Medical University",
         image: ru8,
         description: "High-quality training in medical sciences.",
         details: [
@@ -263,7 +263,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Samara State Medical University",
+        name: "Kirov State Medical University",
         image: ru9,
         description: "Prominent medical training in Samara.",
         details: [
@@ -310,7 +310,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Belgorod State University",
+        name: "Samara State Medical University",
         image: ru10,
         description: "Excellence in multidisciplinary education.",
         details: [
@@ -340,7 +340,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Omsk State Medical University",
+        name: "Belgorod State Medical University",
         image: ru11,
         description: "Dedicated to medical education and research.",
         details: [
@@ -568,8 +568,7 @@ export default function Component() {
             ]
           }
         ]
-      }
-      ,
+      },
       {
         name: "Orel State Medical University",
         image: ru15,
@@ -943,6 +942,10 @@ export default function Component() {
             ]
           },
           {
+            titlePercentage: High"
+            ]
+          },
+          {
             title: "Faculties",
             items: [
               "Faculty of General Medicine",
@@ -1059,7 +1062,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Tambov State University",
+        name: "Tambov State Medical University",
         image: ru22,
         description: "Innovative programs in medical sciences.",
         details: [
@@ -1327,7 +1330,7 @@ export default function Component() {
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
                 <div className="relative h-48">
                   <img
-                    src={university.image}
+                    src={university.image || "/placeholder.svg"}
                     alt={university.name}
                     className="w-full h-full object-cover"
                   />
@@ -1456,7 +1459,7 @@ export default function Component() {
                 </svg>
               </button>
             </div>
-            <img src={selectedUniversity.image} alt={selectedUniversity.name} className="w-full h-64 object-cover mb-4 rounded-md" />
+            <img src={selectedUniversity.image || "/placeholder.svg"} alt={selectedUniversity.name} className="w-full h-64 object-cover mb-4 rounded-md" />
             {Array.isArray(selectedUniversity.details) ? (
               <div className="space-y-4">
                 {selectedUniversity.details.map((section, index) => (
@@ -1485,3 +1488,4 @@ export default function Component() {
     </Layout>
   )
 }
+
