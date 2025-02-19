@@ -150,7 +150,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Kemerovo State Medical University",
+        name: "Sechenov university ",
         image: ru2,
         description: "Comprehensive medical education in Siberia.",
         details: [
@@ -208,7 +208,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Kirov State Medical University",
+        name: "Kemerovo state medical university ",
         image: ru8,
         description: "High-quality training in medical sciences.",
         details: [
@@ -263,7 +263,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Samara State Medical University",
+        name: " Kirov state medical university ",
         image: ru9,
         description: "Prominent medical training in Samara.",
         details: [
@@ -310,7 +310,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Belgorod State University",
+        name: " Samara state medical university ",
         image: ru10,
         description: "Excellence in multidisciplinary education.",
         details: [
@@ -340,7 +340,7 @@ export default function Component() {
         ]
       },
       {
-        name: "Omsk State Medical University",
+        name: "Belgorod state medical university ",
         image: ru11,
         description: "Dedicated to medical education and research.",
         details: [
